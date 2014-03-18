@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/taish/ubiregi.png?branch=master)](https://travis-ci.org/taish/ubiregi)
 [![Coverage Status](https://coveralls.io/repos/taish/ubiregi/badge.png)](https://coveralls.io/r/taish/ubiregi)
 
 # Ubiregi
