@@ -1,9 +1,10 @@
-# $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
+require 'simplecov'
+require 'coveralls'
+Coveralls.wear!
 require 'ubiregi'
 require 'vcr'
 require 'webmock/rspec'
-require 'coveralls'
-require 'simplecov'
+
 
 VCR.configure do |c|
     c.cassette_library_dir = 'spec/vcr_cassettes'
@@ -14,7 +15,6 @@ end
 SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[
   SimpleCov::Formatter::HTMLFormatter,
   Coveralls::SimpleCov::Formatter
-  Coveralls.wear!
 ]
 
 SimpleCov.start do
