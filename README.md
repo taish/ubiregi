@@ -1,3 +1,5 @@
+[![Coverage Status](https://coveralls.io/repos/taish/ubiregi/badge.png)](https://coveralls.io/r/taish/ubiregi)
+
 # Ubiregi
 
 TODO: Write a gem description
@@ -15,6 +17,26 @@ And then execute:
 Or install it yourself as:
 
     $ gem install ubiregi
+
+## Quick Start Guide (Ubiregi API)
+
+```ruby
+client = Ubiregi::Connect::Client.new(
+  access_token: "Your access token",
+  refresh_token: "Your refresh token"
+)
+```
+
+or
+
+```ruby
+client = Ubiregi::Connect::Client.new do |config|
+  config.access_token  = "Your access token"
+  config.refresh_token = "Your refresh token"
+  config.client_id  = "Your client id"
+  config.client_secret = "Your client secret"
+end
+```
 
 ## Usage
 

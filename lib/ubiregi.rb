@@ -1,5 +1,3 @@
 require "ubiregi/version"
+require 'ubiregi/connect'
 
-module Ubiregi
-  # Your code goes here...
-end
